@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SyncSpace - Study Collaboration App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Dashboard -->
+  <div id="home">
+    <h1>Welcome to Your Dashboard!</h1>
+    <button id="create-group-btn">Create Group</button>
+    <h2>Your Groups</h2>
+    <div id="group-list">
+      <!-- Groups will appear here as square buttons -->
+    </div>
+  </div>
+
+  <!-- Group Space -->
+  <div id="group-space" style="display: none;">
+    <h1 id="group-name"></h1>
+    <button id="back-to-dashboard">Back to Dashboard</button>
+
+    <!-- Real-Time Chat Section -->
+    <section id="chat">
+      <h2>Real-Time Chat</h2>
+      <div id="chat-room">
+        <div id="messages"></div>
+        <input type="text" id="chat-input" placeholder="Type a message...">
+        <button id="send-chat">Send</button>
+      </div>
+    </section>
+
+    <!-- Document Sharing Section -->
+    <section id="document-sharing">
+      <h2>Document Sharing</h2>
+      <input type="file" id="upload-document">
+      <button id="share-document">Share</button>
+      <div id="notice-board">
+        <h3>Notice Board</h3>
+        <ul id="documents-list"></ul>
+      </div>
+    </section>
+
+    <!-- Task and Goal Management -->
+    <section id="tasks">
+      <h2>Tasks and Goals</h2>
+      <input type="text" id="task-input" placeholder="Task/Goal">
+      <input type="date" id="task-deadline">
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Personal and Group Calendars -->
+    <section id="calendar">
+      <h2>Calendar</h2>
+      <p>View scheduled events and deadlines here.</p>
+      <div id="calendar-view"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
