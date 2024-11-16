@@ -1,1 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#home, #group-space {
+  margin: 20px;
+}
+
+#group-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.group-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.group-btn:hover {
+  background-color: #e9ecef;
+}
+
+#chat-room {
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#task-list, #documents-list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
